@@ -8,7 +8,7 @@
             "name": "(gdb) Pipe Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "program": "enter program name, for example ${workspaceFolder}/treasureminer/a.out",
             "processId": "${command:pickRemoteProcess}",
             "pipeTransport": {
                 "debuggerPath": "/usr/bin/gdb",
