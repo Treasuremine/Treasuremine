@@ -1,0 +1,12 @@
+{
+	"sub": "{351ae70d-25ea-43c9-879f-0bd58aa577bf}:{stepUuid}",
+	"aud": "ari:cloud:bitbucket::workspace/ca9c8740-3551-46b2-a3b4-29c24d1ee06c",
+	"stepUuid": "{xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx}",
+	"iss": "https://api.bitbucket.org/2.0/workspaces/texturesegmentation/pipelines-config/identity/oidc",
+	"repositoryUuid": "{351ae70d-25ea-43c9-879f-0bd58aa577bf}",
+	"branchName": "xxxxxxxxx",
+	"exp": "xxxxxxxxxx",
+	"iat": "xxxxxxxxxx",
+	"pipelineUuid": "{xxxxx-xxxxx-xxxx-xxxx-xxxxxxxxxxx}",
+	"workspaceUuid": "{ca9c8740-3551-46b2-a3b4-29c24d1ee06c}"
+}
