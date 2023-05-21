@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Treasuremine<!--Dedicated to my elder sister who inspire me to write along the way
+<!--Dedicated to my elder sister who inspire me to write along the way
 This book is also dedicated to my Parents.
 They explain me the purpose of life how to live.
 They inspire me in each and every turn of my life.
@@ -465,6 +465,7 @@ And Develop personal theory of practice and lab requirement thesis.-->
 
     return 0;
     }
+- 👋 Hi, I’m @Treasuremine
 - 👀 I’m interested in space travelling...
 - 🌱 I’m currently learning coding ...
 - 💞️ I’m looking to collaborate on PM...
