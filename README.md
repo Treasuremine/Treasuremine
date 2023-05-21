@@ -96,9 +96,8 @@ And Develop personal theory of practice and lab requirement thesis.-->
     The app can be used to create and refine a binary or semantic segmentation mask for a 3-D grayscale or an RGB image using automated, semi-automated and manual techniques.
 ## Properties of Texture
 <hr>
-     Properties of texture of image are the characteristics or features that describe how an image texture looks or feels.
-     Image texture refers to the spatial arrangement of color or intensities in an image or selected region of an image.
-     Image texture can be artificially created or found in natural scenes captured in an image.
+     
+        Properties of texture of image are the characteristics or features that describe how an image texture looks or feels.Image texture refers to the spatial arrangement of color or intensities in an image or selected region of an image.Image texture can be artificially created or found in natural scenes captured in an image.
 
         Some examples of properties of texture of image are:
 
@@ -207,6 +206,7 @@ And Develop personal theory of practice and lab requirement thesis.-->
 
 ## Texture extraction: Rotation In-variance
 <hr>
+        
         Rotation invariance texture is a term that refers to the property of a texture feature or descriptor that does not change when the texture image is rotated by some angle. Rotation invariance texture can be useful for texture analysis and classification, because it can make the feature or descriptor more robust and consistent across different orientations of the texture image.
 
         There are different methods to achieve rotation invariance texture, such as:
