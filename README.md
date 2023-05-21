@@ -96,7 +96,7 @@ And Develop personal theory of practice and lab requirement thesis.-->
     The app can be used to create and refine a binary or semantic segmentation mask for a 3-D grayscale or an RGB image using automated, semi-automated and manual techniques.
 ## Properties of Texture
 <hr>
-    Properties of texture of image are the characteristics or features that describe how an image texture looks or feels. Image texture refers to the spatial arrangement of color or intensities in an image or selected region of an image². Image texture can be artificially created or found in natural scenes captured in an image.
+        Properties of texture of image are the characteristics or features that describe how an image texture looks or feels. Image texture refers to the spatial arrangement of color or intensities in an image or selected region of an image². Image texture can be artificially created or found in natural scenes captured in an image.
 
         Some examples of properties of texture of image are:
 
