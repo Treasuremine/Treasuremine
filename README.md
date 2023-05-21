@@ -1,25 +1,25 @@
-Dedicated to my elder sister who inspire me to write along the way
-
+<!--Dedicated to my elder sister who inspire me to write along the way
 This book is also dedicated to my Parents.
 They explain me the purpose of life how to live.
 They inspire me in each and every turn of my life.
 Understanding the problem-solving circumstance are the experiences to step forward.
 Awareness to the topic comes with knowledge of attention.
-And Develop personal theory of practice and lab requirement thesis.
+And Develop personal theory of practice and lab requirement thesis.-->
+
 ******************************************************************************
                                     Introduction
 ******************************************************************************
-Digital image processing is the class of methods that deal with manipulating digital images through the use of computer algorithms. It is an essential pre-processing step in many applications, such as face recognition, object detection, and image compression.
 
+Digital image processing is the class of methods that deal with manipulating digital images through the use of computer algorithms. It is an essential pre-processing step in many applications, such as face recognition, object detection, and image compression.
 Digital image processing can involve various tasks, such as:
-Image acquisition: This involves capturing an image using a digital camera or scanner, or importing an existing image into a computer.
- Image enhancement: This involves improving the visual quality of an image, such as increasing contrast, reducing noise, and removing artifacts.
- Image restoration: This involves removing degradation from an image, such as blurring, noise, and distortion.
- Image segmentation: This involves dividing an image into regions or segments, each of which corresponds to a specific object or feature in the image.
- Image representation and description: This involves representing an image in a way that can be analyzed and manipulated by a computer, and describing the features of an image in a compact and meaningful way.
-Image analysis: This involves using algorithms and mathematical models to extract information from an image, such as recognizing objects, detecting patterns, and quantifying features.
- Image synthesis and compression: This involves generating new images or compressing existing images to reduce storage and transmission requirements.
-Image classification is a subdomain of computer vision dealing with categorizing and labeling groups of pixels or vectors within an image using a collection of predefined tags or categories that an algorithm has been trained on
+-Image acquisition: This involves capturing an image using a digital camera or scanner, or importing an existing image into a computer.
+ -Image enhancement: This involves improving the visual quality of an image, such as increasing -contrast, reducing noise, and removing artifacts.
+ -Image restoration: This involves removing degradation from an image, such as blurring, noise, and distortion.
+ -Image segmentation: This involves dividing an image into regions or segments, each of which corresponds to a specific object or feature in the image.
+ -Image representation and description: This involves representing an image in a way that can be analyzed and manipulated by a computer, and describing the features of an image in a compact and meaningful way.
+-Image analysis: This involves using algorithms and mathematical models to extract information from an image, such as recognizing objects, detecting patterns, and quantifying features.
+ -Image synthesis and compression: This involves generating new images or compressing existing images to reduce storage and transmission requirements.
+-Image classification is a subdomain of computer vision dealing with categorizing and labeling groups of pixels or vectors within an image using a collection of predefined tags or categories that an algorithm has been trained on
 
 Digital image processing is widely used in various fields, such as:
  Medical imaging: This involves processing images of human organs and tissues for diagnosis, treatment, and research purposes. Examples include X-ray, MRI, CT scan, ultrasound, etc.
