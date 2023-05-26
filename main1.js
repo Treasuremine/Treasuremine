@@ -1,3 +1,11 @@
+  
+        let heading=document.getElementById("heading");
+        let button=document.getElementById("button");
+        button.addEventListner("click", function()
+        {
+          heading.style.color="red";});
+     
+
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
