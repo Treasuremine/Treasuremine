@@ -28,8 +28,13 @@ For the event_type 2, the latest value is 2 and the second latest value is 7, so
 
 The names of the columns in the rowset don't matter, but their order does.
 ******************************************************************************************
-ELECT event_type, MAX(value) - MAX(value) OVER (PARTITION BY event_type ORDER BY time DESC ROWS BETWEEN 1 PRECEDING AND 1 PRECEDING) AS diff
-FROM table_name
-GROUP BY event_type
-HAVING COUNT(*) > 1
-ORDER BY event_type ASC;
+-- Implement your solution here
+select t1.event_type,t1.value- t2.value 
+from 
+(SELECT event_type,value,rank() OVER (PARTITION BY event_type ORDER BY time DESC)rnk
+FRom events)t1,
+(SELECT event_type,value,rank() OVER (PARTITION BY event_type ORDER BY time DESC)rnk
+FRom events)t2
+where t1.event_type=t2.event_type
+and t1.rnk=1
+and t2.rnk=2;
