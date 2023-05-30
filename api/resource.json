@@ -1,0 +1,46 @@
+#Resource Id:/subscriptions/fc84c07a-c3b3-44e9-8d5a-104da2c02f9e/resourcegroups/learn-4204b04d-0852-4876-abc0-de678d4e25b8/providers/Microsoft.Web/staticSites/royalsistercaffe
+{
+    "id": "/subscriptions/fc84c07a-c3b3-44e9-8d5a-104da2c02f9e/resourceGroups/learn-4204b04d-0852-4876-abc0-de678d4e25b8/providers/Microsoft.Web/staticSites/royalsistercaffe",
+    "name": "royalsistercaffe",
+    "type": "Microsoft.Web/staticSites",
+    "location": "East Asia",
+    "tags": {
+        "x-created-by": "Mallikagaur",
+        "x-created-for": "Reet_aradhya",
+        "x-module-id": "learn.create-git-project",
+        "ms-resource-usage": "azure-cloud-shell"
+    },
+    "properties": {
+        "defaultHostname": "delightful-stone-0bf2d6800.3.azurestaticapps.net",
+        "repositoryUrl": "https://github.com/Treasuremine/Treasuremine",
+        "branch": "main",
+        "customDomains": [],
+        "stableInboundIP": "13.75.66.141",
+        "privateEndpointConnections": [],
+        "stagingEnvironmentPolicy": "Enabled",
+        "allowConfigFileUpdates": true,
+        "contentDistributionEndpoint": "https://content-hk1.infrastructure.3.azurestaticapps.net",
+        "keyVaultReferenceIdentity": "SystemAssigned",
+        "userProvidedFunctionApps": [],
+        "linkedBackends": null,
+        "provider": "GitHub",
+        "enterpriseGradeCdnStatus": "Disabled",
+        "publicNetworkAccess": null,
+        "databaseConnections": [],
+        "trafficSplitting": {
+            "environmentDistribution": {
+                "default": 100
+            }
+        },
+        "areStaticSitesDistributedBackendsEnabled": false,
+        "targetResourceGroupResourceId": null,
+        "trialExpirationTimeUtc": null,
+        "prettyNameStatus": null,
+        "prettyName": null,
+        "prettyNameHostname": null
+    },
+    "sku": {
+        "name": "Free",
+        "tier": "Free"
+    }
+}
