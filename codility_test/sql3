@@ -1,0 +1,6 @@
+-- Implement your solution here
+SELECT t.team_id, t.team_name, SUM(CASE WHEN m.host_goals > m.guest_goals THEN 1 WHEN m.host_goals = m.guest_goals THEN 3 ELSE 0 END) AS num_points
+FROM teams t
+JOIN matches m ON t.team_id = m.host_team OR t.team_id = m.guest_team
+GROUP BY t.team_id, t.team_name
+ORDER BY num_points DESC, t.team_id ASC;
