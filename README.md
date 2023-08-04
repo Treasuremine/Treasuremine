@@ -31,9 +31,7 @@ You can click the Preview link to take a look at your changes.
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
-  limitations under the License.
--->
-<!DOCTYPE html>
+  limitations under the License 
 <html>
   <head>
     <title>Locator</title>
@@ -744,7 +742,7 @@ You can click the Preview link to take a look at your changes.
     </script>
   </head>
   <body>
-<a href="c\TheSathiCoaching\index.html"> click me!</a>
+<a [href="c\TheSathiCoaching\index.html](https://www.instagram.com/reel/Cjkdlx5sLAz/?igshid=MTc4MmM1YmI2Ng==)"> little bunny crafting !</a>
     <div id="map-container">
       <div id="locations-panel">
         <div id="locations-panel-list">
