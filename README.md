@@ -18,20 +18,7 @@ You can click the Preview link to take a look at your changes.
     <li><a href="#">Contact</a></li>
   </ul>
 </nav>
-<!--
-  Copyright 2021 Google LLC
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License 
 <html>
   <head>
     <title>Locator</title>
@@ -41,9 +28,7 @@ You can click the Preview link to take a look at your changes.
     <meta name="keywords" content="the sathi coaching, Rishikesh,">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <style>
       html,
       body {
@@ -51,20 +36,17 @@ You can click the Preview link to take a look at your changes.
         margin: 0;
         padding: 0;
       }
-
-      #map-container {
+ #map-container {
         width: 100%;
         height: 100%;
         position: relative;
         font-family: "Roboto", sans-serif;
         box-sizing: border-box;
       }
-
       #map-container a {
         text-decoration: none;
         color: #1967d2;
       }
-
       #map-container button {
         background: none;
         color: inherit;
@@ -74,16 +56,14 @@ You can click the Preview link to take a look at your changes.
         font-size: inherit;
         cursor: pointer;
       }
-
-      #gmp-map {
+   #gmp-map {
         position: absolute;
         left: 25em;
         top: 0;
         right: 0;
         bottom: 0;
       }
-
-      #locations-panel {
+  #locations-panel {
         position: absolute;
         left: 0;
         width: 25em;
@@ -94,42 +74,35 @@ You can click the Preview link to take a look at your changes.
         padding: 0.5em;
         box-sizing: border-box;
       }
-
       @media only screen and (max-width: 876px) {
         #gmp-map {
           left: 0;
           bottom: 50%;
         }
-
-        #locations-panel {
+  #locations-panel {
           top: 50%;
           right: 0;
           width: unset;
         }
       }
-
-      #locations-panel-list > header {
+   #locations-panel-list > header {
         padding: 1.4em 1.4em 0 1.4em;
       }
-
-      #locations-panel-list h1.search-title {
+  #locations-panel-list h1.search-title {
         font-size: 1em;
         font-weight: 500;
         margin: 0;
       }
-
-      #locations-panel-list h1.search-title > img {
+   #locations-panel-list h1.search-title > img {
         vertical-align: bottom;
         margin-top: -1em;
       }
-
-      #locations-panel-list .search-input {
+  #locations-panel-list .search-input {
         width: 100%;
         margin-top: 0.8em;
         position: relative;
       }
-
-      #locations-panel-list .search-input input {
+  #locations-panel-list .search-input input {
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 0.3em;
@@ -138,87 +111,67 @@ You can click the Preview link to take a look at your changes.
         padding: 0 2.5em 0 1em;
         font-size: 1em;
       }
-
-      #locations-panel-list .search-input-overlay {
+   #locations-panel-list .search-input-overlay {
         position: absolute;
       }
-
-      #locations-panel-list .search-input-overlay.search {
+  #locations-panel-list .search-input-overlay.search {
         right: 2px;
         top: 2px;
         bottom: 2px;
         width: 2.4em;
-      }
-
-      #locations-panel-list .search-input-overlay.search button {
+      }   #locations-panel-list .search-input-overlay.search button {
         width: 100%;
         height: 100%;
         border-radius: 0.2em;
         color: black;
         background: transparent;
-      }
-
-      #locations-panel-list .search-input-overlay.search .icon {
+      }  #locations-panel-list .search-input-overlay.search .icon {
         margin-top: 0.05em;
         vertical-align: top;
       }
-
-      #locations-panel-list .section-name {
+ #locations-panel-list .section-name {
         font-weight: 500;
         font-size: 0.9em;
         margin: 1.8em 0 1em 1.5em;
       }
-
-      #locations-panel-list .location-result {
+  #locations-panel-list .location-result {
         position: relative;
         padding: 0.8em 3.5em 0.8em 1.4em;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         cursor: pointer;
       }
-
-      #locations-panel-list .location-result:first-of-type {
+   #locations-panel-list .location-result:first-of-type {
         border-top: 1px solid rgba(0, 0, 0, 0.12);
       }
-
-      #locations-panel-list .location-result:last-of-type {
+  #locations-panel-list .location-result:last-of-type {
         border-bottom: none;
-      }
-
-      #locations-panel-list .location-result.selected {
+      }  #locations-panel-list .location-result.selected {
         outline: 2px solid #4285f4;
       }
-
-      #locations-panel-list button.select-location {
+ #locations-panel-list button.select-location {
         margin-bottom: 0.6em;
         text-align: left;
       }
-
-      #locations-panel-list .location-result h2.name {
+  #locations-panel-list .location-result h2.name {
         font-size: 1em;
         font-weight: 500;
         margin: 0;
       }
-
-      #locations-panel-list .location-result .address {
+  #locations-panel-list .location-result .address {
         font-size: 0.9em;
         margin-bottom: 0.5em;
       }
-
-      #locations-panel-list .directions-button {
+ #locations-panel-list .directions-button {
         position: absolute;
         right: 1.2em;
         top: 2.3em;
-      }
-
-      #locations-panel-list .directions-button-background:hover {
+      }  #locations-panel-list .directions-button-background:hover {
         fill: rgba(116,120,127,0.1);
       }
-
-      #locations-panel-list .directions-button-background {
+   #locations-panel-list .directions-button-background {
         fill: rgba(255,255,255,0.01);
       }
-
-      #locations-panel-list .location-result .distance {
+  #locations-panel-list .location-result .distance {
         position: absolute;
         top: 0.9em;
         right: 0;
@@ -226,88 +179,65 @@ You can click the Preview link to take a look at your changes.
         font-size: 0.9em;
         width: 5em;
       }
-
-      #locations-panel-list .option-container {
+ #locations-panel-list .option-container {
         display: inline-block;
         margin: 0.2em 0;
         position: relative;
-      }
-
-      #locations-panel-list .option-container button:hover,
+      }  #locations-panel-list .option-container button:hover,
       #locations-panel-list .option-container a:hover {
         background-color: #f1f3f4;
-      }
-
-      #locations-panel-list .option {
+      }  #locations-panel-list .option {
         border: 1px solid #bdc1c6;
         border-radius: 0.9em;
         color: #1967d2;
         font-size: 0.9em;
         font-weight: 500;
         padding: 0.3em 0;
-      }
-
-      #locations-panel-list .option > span {
+      }  #locations-panel-list .option > span {
         margin: 0 0.9em;
       }
-
-      #locations-panel-list .action-button .option {
+ #locations-panel-list .action-button .option {
         align-items: center;
         display: flex;
       }
-
-      #locations-panel-list .action-button img {
+ #locations-panel-list .action-button img {
         /* Match link color #1967d2 */
         filter: invert(30%) sepia(67%) saturate(7379%) hue-rotate(209deg) brightness(95%) contrast(80%);
         height: 1.5em;
         margin: -0.2em;
         width: 2.5em;
-      }
-
-      #locations-panel-list .action-button .open-icon {
+      }  #locations-panel-list .action-button .open-icon {
         height: 1.2em;
       }
-
-      #locations-panel-list .split-action-button {
+  #locations-panel-list .split-action-button {
         display: flex;
       }
-
-      #locations-panel-list .split-action-button .option:first-child {
+#locations-panel-list .split-action-button .option:first-child {
         border-radius: 0.9em 0 0 0.9em;
       }
-
-      #locations-panel-list .split-action-button .option:last-child {
+  #locations-panel-list .split-action-button .option:last-child {
         border-radius: 0 0.9em 0.9em 0;
         margin-left: -1px;
-      }
-
-      #locations-panel-list .action-button:not(.split-action-button) span {
+      }  #locations-panel-list .action-button:not(.split-action-button) span {
         margin-right: 0.3em;
       }
-
-      #locations-panel-list .action-dropdown {
+  #locations-panel-list .action-dropdown {
         background-color: white;
         box-shadow: 0 4px 10px rgb(60 64 67 / 28%);
         display: none;
         position: absolute;
         z-index: 10;
-      }
-
-      #locations-panel-list .action-dropdown a {
+      }  #locations-panel-list .action-dropdown a {
         color: black;
         display: flex;
         line-height: 1.8em;
         padding: 0.6em 1.2em;
         white-space: nowrap;
-      }
-
-      #locations-panel-list .action-dropdown img {
+      }  #locations-panel-list .action-dropdown img {
         height: 1.8em;
         padding-right: 0.6em;
         width: 1.8em;
-      }
-
-      #location-results-list {
+      } #location-results-list {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -315,18 +245,15 @@ You can click the Preview link to take a look at your changes.
     </style>
     <script>
       'use strict';
-
-      /** Hide a DOM element. */
+   /** Hide a DOM element. */
       function hideElement(el) {
         el.style.display = 'none';
       }
-
-      /** Show a DOM element that has been hidden. */
+  /** Show a DOM element that has been hidden. */
       function showElement(el) {
         el.style.display = 'block';
       }
-
-      /** Helper function to generate a Google Maps directions URL */
+  /** Helper function to generate a Google Maps directions URL */
       function generateDirectionsURL(origin, destination) {
         const googleMapsUrlBase = 'https://www.google.com/maps/dir/?';
         const searchParams = new URLSearchParams('api=1');
@@ -341,36 +268,29 @@ You can click the Preview link to take a look at your changes.
         searchParams.append('destination', destinationParam.join(','));
         return googleMapsUrlBase + searchParams.toString();
       }
-
-      /**
+  /**
        * Defines an instance of the Locator+ solution, to be instantiated
        * when the Maps library is loaded.
        */
       function LocatorPlus(configuration) {
         const locator = this;
-
-        locator.locations = configuration.locations || [];
+locator.locations = configuration.locations || [];
         locator.capabilities = configuration.capabilities || {};
-
         const mapEl = document.getElementById('gmp-map');
         const panelEl = document.getElementById('locations-panel');
         locator.panelListEl = document.getElementById('locations-panel-list');
         const sectionNameEl =
             document.getElementById('location-results-section-name');
         const resultsContainerEl = document.getElementById('location-results-list');
-
-        const itemsTemplate = Handlebars.compile(
+const itemsTemplate = Handlebars.compile(
             document.getElementById('locator-result-items-tmpl').innerHTML);
-
-        locator.searchLocation = null;
+  locator.searchLocation = null;
         locator.searchLocationMarker = null;
         locator.selectedLocationIdx = null;
         locator.userCountry = null;
-
-        // Initialize the map -------------------------------------------------------
+ // Initialize the map -------------------------------------------------------
         locator.map = new google.maps.Map(mapEl, configuration.mapOptions);
-
-        // Store selection.
+  // Store selection.
         const selectResultItem = function(locationIdx, panToMarker, scrollToResult) {
           locator.selectedLocationIdx = locationIdx;
           for (let locationElem of resultsContainerEl.children) {
@@ -385,9 +305,7 @@ You can click the Preview link to take a look at your changes.
           if (panToMarker && (locationIdx != null)) {
             locator.map.panTo(locator.locations[locationIdx].coords);
           }
-        };
-
-        // Create a marker for each location.
+        };  // Create a marker for each location.
         const markers = locator.locations.map(function(location, index) {
           const marker = new google.maps.Marker({
             position: location.coords,
@@ -399,8 +317,7 @@ You can click the Preview link to take a look at your changes.
           });
           return marker;
         });
-
-        // Fit map to marker bounds.
+// Fit map to marker bounds.
         locator.updateBounds = function() {
           const bounds = new google.maps.LatLngBounds();
           if (locator.searchLocationMarker) {
@@ -413,29 +330,23 @@ You can click the Preview link to take a look at your changes.
         };
         if (locator.locations.length) {
           locator.updateBounds();
-        }
-
-        // Get the distance of a store location to the user's location,
+        }  // Get the distance of a store location to the user's location,
         // used in sorting the list.
         const getLocationDistance = function(location) {
           if (!locator.searchLocation) return null;
-
           // Use travel distance if available (from Distance Matrix).
           if (location.travelDistanceValue != null) {
             return location.travelDistanceValue;
           }
-
-          // Fall back to straight-line distance.
+  // Fall back to straight-line distance.
           return google.maps.geometry.spherical.computeDistanceBetween(
               new google.maps.LatLng(location.coords),
               locator.searchLocation.location);
         };
-
-        // Render the results list --------------------------------------------------
+  // Render the results list --------------------------------------------------
         const getResultIndex = function(elem) {
           return parseInt(elem.getAttribute('data-location-index'));
         };
-
         locator.renderResultsList = function() {
           let locations = locator.locations.slice();
           for (let i = 0; i < locations.length; i++) {
@@ -457,13 +368,11 @@ You can click the Preview link to take a look at your changes.
             if (resultIndex === locator.selectedLocationIdx) {
               item.classList.add('selected');
             }
-
-            const resultSelectionHandler = function() {
+  const resultSelectionHandler = function() {
               if (resultIndex !== locator.selectedLocationIdx) {
                 selectResultItem(resultIndex, true, false);
               }
             };
-
             // Clicking anywhere on the item selects this location.
             // Additionally, create a button element to make this behavior
             // accessible under tab navigation.
@@ -473,8 +382,7 @@ You can click the Preview link to take a look at your changes.
                   resultSelectionHandler();
                   e.stopPropagation();
                 });
-
-            // For each action that contains links to multiple booking partners,
+ // For each action that contains links to multiple booking partners,
             // display the links in a toggleable dropdown menu.
             item.querySelectorAll('.dropdown-container').forEach((containerEl) => {
               const dropdownEl = containerEl.querySelector('.action-dropdown');
@@ -493,8 +401,7 @@ You can click the Preview link to take a look at your changes.
                 locator.openDropdownEl = dropdownEl;
               });
             });
-
-            // Clicking the directions button will open Google Maps directions in a
+   // Clicking the directions button will open Google Maps directions in a
             // new tab
             const origin = (locator.searchLocation != null) ?
                 locator.searchLocation.location :
@@ -505,31 +412,24 @@ You can click the Preview link to take a look at your changes.
                 .setAttribute('href', googleMapsUrl);
           }
         };
-
-        window.addEventListener('click', function(e) {
+ window.addEventListener('click', function(e) {
           // Collapse any open dropdown menu when user clicks outside it.
           if (locator.openDropdownEl && !locator.openDropdownEl.parentNode.contains(e.target)) {
             hideElement(locator.openDropdownEl);
             locator.openDropdownEl = undefined;
           }
         });
-
         // Optional capability initialization --------------------------------------
         initializeSearchInput(locator);
         initializeDistanceMatrix(locator);
-
-        // Initial render of results -----------------------------------------------
+ // Initial render of results -----------------------------------------------
         locator.renderResultsList();
-      }
-
-      /** When the search input capability is enabled, initialize it. */
+      }   /** When the search input capability is enabled, initialize it. */
       function initializeSearchInput(locator) {
         const geocodeCache = new Map();
         const geocoder = new google.maps.Geocoder();
-
         const searchInputEl = document.getElementById('location-search-input');
         const searchButtonEl = document.getElementById('location-search-button');
-
         const updateSearchLocation = function(address, location) {
           if (locator.searchLocationMarker) {
             locator.searchLocationMarker.setMap(null);
@@ -551,34 +451,25 @@ You can click the Preview link to take a look at your changes.
               strokeOpacity: 0,
             }
           });
-
           // Update the locator's idea of the user's country, used for units. Use
           // `formatted_address` instead of the more structured `address_components`
           // to avoid an additional billed call.
           const addressParts = address.split(' ');
           locator.userCountry = addressParts[addressParts.length - 1];
-
-          // Update map bounds to include the new location marker.
+  // Update map bounds to include the new location marker.
           locator.updateBounds();
-
-          // Update the result list so we can sort it by proximity.
+// Update the result list so we can sort it by proximity.
           locator.renderResultsList();
-
-          locator.updateTravelTimes();
-        };
-
-        const geocodeSearch = function(query) {
+ locator.updateTravelTimes();
+        };  const geocodeSearch = function(query) {
           if (!query) {
             return;
           }
-
-          const handleResult = function(geocodeResult) {
+  const handleResult = function(geocodeResult) {
             searchInputEl.value = geocodeResult.formatted_address;
             updateSearchLocation(
                 geocodeResult.formatted_address, geocodeResult.geometry.location);
-          };
-
-          if (geocodeCache.has(query)) {
+          };  if (geocodeCache.has(query)) {
             handleResult(geocodeCache.get(query));
             return;
           }
@@ -593,18 +484,15 @@ You can click the Preview link to take a look at your changes.
             }
           });
         };
-
         // Set up geocoding on the search input.
         searchButtonEl.addEventListener('click', function() {
           geocodeSearch(searchInputEl.value.trim());
         });
-
         // Initialize Autocomplete.
         initializeSearchInputAutocomplete(
             locator, searchInputEl, geocodeSearch, updateSearchLocation);
-      }
-
-      /** Add Autocomplete to the search input. */
+      )
+        /** Add Autocomplete to the search input. */
       function initializeSearchInputAutocomplete(
           locator, searchInputEl, fallbackSearch, searchLocationUpdater) {
         // Set up Autocomplete on the search input. Bias results to map viewport.
@@ -625,16 +513,12 @@ You can click the Preview link to take a look at your changes.
               placeResult.formatted_address, placeResult.geometry.location);
         });
       }
-
-      /** Initialize Distance Matrix for the locator. */
+  /** Initialize Distance Matrix for the locator. */
       function initializeDistanceMatrix(locator) {
-        const distanceMatrixService = new google.maps.DistanceMatrixService();
-
-        // Annotate travel times to the selected location using Distance Matrix.
+        const distanceMatrixService = new google.maps.DistanceMatrixService();  // Annotate travel times to the selected location using Distance Matrix.
         locator.updateTravelTimes = function() {
           if (!locator.searchLocation) return;
-
-          const units = (locator.userCountry === 'USA') ?
+  const units = (locator.userCountry === 'USA') ?
               google.maps.UnitSystem.IMPERIAL :
               google.maps.UnitSystem.METRIC;
           const request = {
@@ -659,7 +543,6 @@ You can click the Preview link to take a look at your changes.
                 location.travelDistanceText = travelDistanceText;
                 location.travelDistanceValue = travelDistanceValue;
               }
-
               // Re-render the results list, in case the ordering has changed.
               locator.renderResultsList();
             }
@@ -678,7 +561,6 @@ You can click the Preview link to take a look at your changes.
         "mapsApiKey": "AIzaSyAdzA_48-TOimdNonV0oJbOZyNOZDFsEHw",
         "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":true}
       };
-
       function initMap() {
         new LocatorPlus(CONFIGURATION);
       }
@@ -742,7 +624,7 @@ You can click the Preview link to take a look at your changes.
     </script>
   </head>
   <body>
-<a [href="c\TheSathiCoaching\index.html](https://www.instagram.com/reel/Cjkdlx5sLAz/?igshid=MTc4MmM1YmI2Ng==)"> little bunny crafting !</a>
+<a="https://www.instagram.com/reel/Cjkdlx5sLAz/?igshid=MTc4MmM1YmI2Ng=="> littlebunnycrafting</a>
     <div id="map-container">
       <div id="locations-panel">
         <div id="locations-panel-list">
