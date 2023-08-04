@@ -624,7 +624,7 @@ const itemsTemplate = Handlebars.compile(
     </script>
   </head>
   <body>
-<a="https://www.instagram.com/reel/Cjkdlx5sLAz/?igshid=MTc4MmM1YmI2Ng=="> littlebunnycrafting</a>
+<a href="https://www.instagram.com/reel/Cjkdlx5sLAz/?igshid=MTc4MmM1YmI2Ng=="> littlebunnycrafting</a>
     <div id="map-container">
       <div id="locations-panel">
         <div id="locations-panel-list">
